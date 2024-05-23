@@ -1,9 +1,10 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Runtime;
-
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Runtime;
+ 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Gile.AutoCAD.R20.Extension
 {
@@ -311,7 +312,7 @@ namespace Gile.AutoCAD.R20.Extension
                     var records = sourceTable
                         .Cast<ObjectId>()
                         .Select(id => (SymbolTableRecord)tr.GetObject(id, OpenMode.ForRead))
-                        .Where(r => Autodesk.AutoCAD.Internal.Utils.WcMatchEx(r.Name, pattern, true))
+                        .Where(r =>Regex.IsMatch(r.Name, pattern))
                         .ToDictionary(r => r.Name, r => r.ObjectId);
                     var ids = new ObjectIdCollection(records.Values.ToArray());
                     var mapping = new IdMapping();

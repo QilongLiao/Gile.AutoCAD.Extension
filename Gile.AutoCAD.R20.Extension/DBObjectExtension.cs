@@ -1,5 +1,5 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Runtime;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Runtime;
 
 namespace Gile.AutoCAD.R20.Extension
 {

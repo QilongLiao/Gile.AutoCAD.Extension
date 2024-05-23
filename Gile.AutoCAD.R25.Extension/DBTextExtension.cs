@@ -1,5 +1,5 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Geometry;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Geometry;
 
 using System;
 using System.Runtime.InteropServices;

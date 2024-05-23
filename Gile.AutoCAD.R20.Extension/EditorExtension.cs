@@ -1,7 +1,7 @@
-﻿using Autodesk.AutoCAD.ApplicationServices.Core;
-using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.EditorInput;
-using Autodesk.AutoCAD.Geometry;
+﻿using GrxCAD.ApplicationServices;
+using GrxCAD.DatabaseServices;
+using GrxCAD.EditorInput;
+using GrxCAD.Geometry;
 
 using System.Collections.Generic;
 using System.Linq;

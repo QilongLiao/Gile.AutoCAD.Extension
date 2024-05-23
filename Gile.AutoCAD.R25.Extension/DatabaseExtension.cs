@@ -1,5 +1,5 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Runtime;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Runtime;
 
 using System;
 using System.Collections.Generic;
@@ -305,7 +305,7 @@ namespace Gile.AutoCAD.R25.Extension
             var records = sourceTable
                 .Cast<ObjectId>()
                 .Select(id => (SymbolTableRecord)tr.GetObject(id, OpenMode.ForRead))
-                .Where(r => Autodesk.AutoCAD.Internal.Utils.WcMatchEx(r.Name, pattern, true))
+                .Where(r => GrxCAD.Internal.Utils.WcMatchEx(r.Name, pattern, true))
                 .ToDictionary(r => r.Name, r => r.ObjectId);
             var ids = new ObjectIdCollection([.. records.Values]);
             var mapping = new IdMapping();

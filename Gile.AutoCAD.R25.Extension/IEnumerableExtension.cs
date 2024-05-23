@@ -1,5 +1,5 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Runtime;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Runtime;
 
 using System;
 using System.Collections.Generic;
@@ -67,7 +67,7 @@ namespace Gile.AutoCAD.R25.Extension
                 {
                     item.OpenForWrite(tr);
                 }
-                catch (Autodesk.AutoCAD.Runtime.Exception ex)
+                catch (GrxCAD.Runtime.Exception ex)
                 {
                     if (ex.ErrorStatus != ErrorStatus.OnLockedLayer)
                     {

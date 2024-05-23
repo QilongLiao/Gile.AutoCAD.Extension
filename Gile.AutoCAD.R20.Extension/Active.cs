@@ -1,8 +1,8 @@
-﻿using Autodesk.AutoCAD.ApplicationServices.Core;
-using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.EditorInput;
+﻿using GrxCAD.ApplicationServices;
+using GrxCAD.DatabaseServices;
+using GrxCAD.EditorInput;
 
-using AcAp = Autodesk.AutoCAD.ApplicationServices;
+using AcAp = GrxCAD.ApplicationServices;
 
 // Inspired by Scott McFarlane
 // https://www.autodesk.com/autodesk-university/class/Being-Remarkable-C-NET-AutoCAD-Developer-2015#handout

@@ -1,6 +1,6 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Geometry;
-using Autodesk.AutoCAD.Runtime;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Geometry;
+using GrxCAD.Runtime;
 
 using System.Collections.Generic;
 using System.Linq;
@@ -174,7 +174,8 @@ namespace Gile.AutoCAD.R20.Extension
                 {
                     var objectContextManager = db.ObjectContextManager;
                     var objectContextCollection = objectContextManager.GetContextCollection("ACDB_ANNOTATIONSCALES");
-                    Autodesk.AutoCAD.Internal.ObjectContexts.AddContext(br, objectContextCollection.CurrentContext);
+                   
+                    // GrxCAD.Internal.ObjectContexts.AddContext(br, objectContextCollection.CurrentContext);
                 }
                 target.Add(tr, br);
                 br.AddAttributeReferences(tr, attribValues);

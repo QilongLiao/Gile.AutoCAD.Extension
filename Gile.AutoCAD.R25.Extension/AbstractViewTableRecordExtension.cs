@@ -1,5 +1,5 @@
-﻿using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Geometry;
+﻿using GrxCAD.DatabaseServices;
+using GrxCAD.Geometry;
 
 namespace Gile.AutoCAD.R25.Extension
 {

@@ -1,4 +1,4 @@
-﻿using Autodesk.AutoCAD.Runtime;
+﻿using GrxCAD.Runtime;
 
 using System.Runtime.CompilerServices;
 
@@ -10,7 +10,7 @@ namespace Gile.AutoCAD.R25.Extension
     public static class RuntimeExtension
     {
         /// <summary>
-        /// Throws Autodesk.AutoCAD.Exception(errorStatus) it condition is true.
+        /// Throws GrxCAD.Exception(errorStatus) it condition is true.
         /// Credit Tony Tanzillo http://www.theswamp.org/index.php?topic=59013.msg619828#msg619828
         /// </summary>
         /// <param name="errorStatus">Error status.</param>
